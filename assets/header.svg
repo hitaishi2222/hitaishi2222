@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d99a5b"/>
+      <stop offset="55%" stop-color="#d8b96a"/>
+      <stop offset="100%" stop-color="#a3b86b"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1418"/>
+      <stop offset="100%" stop-color="#101a20"/>
+    </linearGradient>
+    <linearGradient id="winGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#132631"/>
+      <stop offset="100%" stop-color="#0b1418"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bgGrad)"/>
+
+  <!-- subtle glow -->
+  <circle cx="1080" cy="50" r="170" fill="#d99a5b" opacity="0.05"/>
+  <circle cx="120" cy="300" r="150" fill="#5b9dff" opacity="0.04"/>
+
+  <!-- name + tagline -->
+  <text x="70" y="126" font-size="66" font-weight="800" letter-spacing="-2" fill="url(#titleGrad)">Hitaishi V</text>
+  <text x="74" y="164" font-size="20" fill="#e8e0d4" opacity="0.92">Photonics &amp; laser research &#183; building open tools for optical science</text>
+  <text x="74" y="192" font-size="14" fill="#5c6b7a">python &#183; typescript &#183; lua &#183; rust &#183; typst &#183; neovim &#183; scientific computing</text>
+
+  <!-- pulse / propagation motif -->
+  <g>
+    <rect x="70" y="224" width="560" height="56" rx="10" fill="url(#winGrad)" stroke="#606676" stroke-width="1"/>
+    <path d="M92 252 Q 150 226 208 252 T 324 252 T 440 252 T 556 252" fill="none" stroke="#d99a5b" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M92 252 Q 150 278 208 252 T 324 252 T 440 252 T 556 252" fill="none" stroke="#6fb3a8" stroke-width="1.4" opacity="0.8" stroke-linecap="round"/>
+    <text x="592" y="256" font-size="11" font-family="monospace" fill="#64737f">E(z) = E(0) e^(i&#946;z)</text>
+  </g>
+
+  <!-- domain chips -->
+  <g font-family="monospace" font-size="11">
+    <rect x="700" y="222" width="106" height="26" rx="13" fill="#132631" stroke="#2a3a44"/>
+    <text x="716" y="239" fill="#d8b96a">photonics</text>
+
+    <rect x="818" y="222" width="112" height="26" rx="13" fill="#132631" stroke="#2a3a44"/>
+    <text x="836" y="239" fill="#a3b86b">gnlse</text>
+
+    <rect x="942" y="222" width="104" height="26" rx="13" fill="#132631" stroke="#2a3a44"/>
+    <text x="958" y="239" fill="#6fb3a8">fiber-optics</text>
+
+    <rect x="700" y="256" width="126" height="26" rx="13" fill="#132631" stroke="#2a3a44"/>
+    <text x="716" y="273" fill="#b48ead">data-viz</text>
+
+    <rect x="838" y="256" width="126" height="26" rx="13" fill="#132631" stroke="#2a3a44"/>
+    <text x="854" y="273" fill="#5b9dff">developer-tools</text>
+
+    <rect x="976" y="256" width="126" height="26" rx="13" fill="#132631" stroke="#2a3a44"/>
+    <text x="992" y="273" fill="#d99a5b">terminal-ux</text>
+  </g>
+</svg>
