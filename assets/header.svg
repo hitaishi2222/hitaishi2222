@@ -1,57 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-label="Hitaishi V, photonics and laser research">
+  <!--
+    Palette and type come from imli.nvim (hitaishi2222/imli-nvim):
+    bg #0b1418, bg_alt #101a20, fg #e8e0d4, fg_dim #8b97a5, ember #d99a5b.
+    Core colors: bg, cream text, muted grey-blue. One accent: ember.
+    Prose in the system sans, technical labels in mono, echoing the terminal
+    identity of the colorscheme this palette comes from.
+    Canvas is 1000 wide so the small labels stay legible at README width.
+  -->
   <defs>
-    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#d99a5b"/>
-      <stop offset="55%" stop-color="#d8b96a"/>
-      <stop offset="100%" stop-color="#a3b86b"/>
-    </linearGradient>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0b1418"/>
       <stop offset="100%" stop-color="#101a20"/>
     </linearGradient>
-    <linearGradient id="winGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#132631"/>
-      <stop offset="100%" stop-color="#0b1418"/>
-    </linearGradient>
   </defs>
 
-  <rect width="1200" height="320" fill="url(#bgGrad)"/>
+  <rect width="1000" height="300" fill="url(#bgGrad)"/>
 
-  <!-- subtle glow -->
-  <circle cx="1080" cy="50" r="170" fill="#d99a5b" opacity="0.05"/>
-  <circle cx="120" cy="300" r="150" fill="#5b9dff" opacity="0.04"/>
+  <!-- ===== text column ===== -->
+  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+    <text x="60" y="96" font-size="58" font-weight="800" letter-spacing="-1.5" fill="#d99a5b">Hitaishi V</text>
 
-  <!-- name + tagline -->
-  <text x="70" y="126" font-size="66" font-weight="800" letter-spacing="-2" fill="url(#titleGrad)">Hitaishi V</text>
-  <text x="74" y="164" font-size="20" fill="#e8e0d4" opacity="0.92">Photonics &amp; laser research &#183; building open tools for optical science</text>
-  <text x="74" y="192" font-size="14" fill="#5c6b7a">python &#183; typescript &#183; lua &#183; rust &#183; typst &#183; neovim &#183; scientific computing</text>
+    <!-- accent rule: the one ember gesture, echoed by the pulse curve -->
+    <rect x="60" y="114" width="52" height="3" fill="#d99a5b"/>
 
-  <!-- pulse / propagation motif -->
-  <g>
-    <rect x="70" y="224" width="560" height="56" rx="10" fill="url(#winGrad)" stroke="#606676" stroke-width="1"/>
-    <path d="M92 252 Q 150 226 208 252 T 324 252 T 440 252 T 556 252" fill="none" stroke="#d99a5b" stroke-width="2.2" stroke-linecap="round"/>
-    <path d="M92 252 Q 150 278 208 252 T 324 252 T 440 252 T 556 252" fill="none" stroke="#6fb3a8" stroke-width="1.4" opacity="0.8" stroke-linecap="round"/>
-    <text x="592" y="256" font-size="11" font-family="monospace" fill="#64737f">E(z) = E(0) e^(i&#946;z)</text>
+    <text x="60" y="152" font-size="21" fill="#e8e0d4">Photonics and laser research</text>
+    <text x="60" y="180" font-size="15.5" fill="#8b97a5">Tools for optical science, data analysis, and the terminal</text>
   </g>
 
-  <!-- domain chips -->
-  <g font-family="monospace" font-size="11">
-    <rect x="700" y="222" width="106" height="26" rx="13" fill="#132631" stroke="#2a3a44"/>
-    <text x="716" y="239" fill="#d8b96a">photonics</text>
+  <g font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+    <text x="60" y="216" fill="#8b97a5">python &#183; typescript &#183; lua &#183; rust &#183; typst &#183; neovim</text>
+    <text x="60" y="244" fill="#d99a5b">hitaishiv.com</text>
+  </g>
 
-    <rect x="818" y="222" width="112" height="26" rx="13" fill="#132631" stroke="#2a3a44"/>
-    <text x="836" y="239" fill="#a3b86b">gnlse</text>
+  <!-- ===== figure column ===== -->
+  <g>
+    <!-- time domain: pulse intensity -->
+    <line x1="620" y1="150" x2="940" y2="150" stroke="#2a3a44" stroke-width="1"/>
+    <line x1="620" y1="150" x2="620" y2="132" stroke="#2a3a44" stroke-width="1"/>
+    <path d="M 620.0 146.4 L 626.7 145.7 L 633.3 144.7 L 640.0 143.7 L 646.7 142.4 L 653.3 141.1 L 660.0 139.5 L 666.7 137.8 L 673.3 136.0 L 680.0 134.0 L 686.7 131.9 L 693.3 129.6 L 700.0 127.3 L 706.7 125.0 L 713.3 122.6 L 720.0 120.3 L 726.7 118.1 L 733.3 116.0 L 740.0 114.0 L 746.7 112.3 L 753.3 110.8 L 760.0 109.6 L 766.7 108.7 L 773.3 108.2 L 780.0 108.0 L 786.7 108.2 L 793.3 108.7 L 800.0 109.6 L 806.7 110.8 L 813.3 112.3 L 820.0 114.0 L 826.7 116.0 L 833.3 118.1 L 840.0 120.3 L 846.7 122.6 L 853.3 125.0 L 860.0 127.3 L 866.7 129.6 L 873.3 131.9 L 880.0 134.0 L 886.7 136.0 L 893.3 137.8 L 900.0 139.5 L 906.7 141.1 L 913.3 142.4 L 920.0 143.7 L 926.7 144.7 L 933.3 145.7 L 940.0 146.4"
+          fill="none" stroke="#d99a5b" stroke-width="2.5" stroke-linecap="round"/>
 
-    <rect x="942" y="222" width="104" height="26" rx="13" fill="#132631" stroke="#2a3a44"/>
-    <text x="958" y="239" fill="#6fb3a8">fiber-optics</text>
+    <!-- frequency domain: the same pulse in the spectrum -->
+    <line x1="620" y1="228" x2="940" y2="228" stroke="#2a3a44" stroke-width="1"/>
+    <line x1="620" y1="228" x2="620" y2="212" stroke="#2a3a44" stroke-width="1"/>
+    <path d="M 620.0 221.4 L 626.7 220.5 L 633.3 219.6 L 640.0 218.6 L 646.7 217.5 L 653.3 216.4 L 660.0 215.2 L 666.7 214.0 L 673.3 212.7 L 680.0 211.4 L 686.7 210.1 L 693.3 208.8 L 700.0 207.4 L 706.7 206.2 L 713.3 204.9 L 720.0 203.7 L 726.7 202.6 L 733.3 201.6 L 740.0 200.7 L 746.7 199.9 L 753.3 199.2 L 760.0 198.7 L 766.7 198.3 L 773.3 198.1 L 780.0 198.0 L 786.7 198.1 L 793.3 198.3 L 800.0 198.7 L 806.7 199.2 L 813.3 199.9 L 820.0 200.7 L 826.7 201.6 L 833.3 202.6 L 840.0 203.7 L 846.7 204.9 L 853.3 206.2 L 860.0 207.4 L 866.7 208.8 L 873.3 210.1 L 880.0 211.4 L 886.7 212.7 L 893.3 214.0 L 900.0 215.2 L 906.7 216.4 L 913.3 217.5 L 920.0 218.6 L 926.7 219.6 L 933.3 220.5 L 940.0 221.4"
+          fill="none" stroke="#8b97a5" stroke-width="1.8" stroke-linecap="round"/>
 
-    <rect x="700" y="256" width="126" height="26" rx="13" fill="#132631" stroke="#2a3a44"/>
-    <text x="716" y="273" fill="#b48ead">data-viz</text>
-
-    <rect x="838" y="256" width="126" height="26" rx="13" fill="#132631" stroke="#2a3a44"/>
-    <text x="854" y="273" fill="#5b9dff">developer-tools</text>
-
-    <rect x="976" y="256" width="126" height="26" rx="13" fill="#132631" stroke="#2a3a44"/>
-    <text x="992" y="273" fill="#d99a5b">terminal-ux</text>
+    <g font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#8b97a5">
+      <text x="620" y="168">intensity</text>
+      <text x="940" y="168" text-anchor="end">time</text>
+      <text x="620" y="246">spectrum</text>
+      <text x="940" y="246" text-anchor="end">frequency</text>
+    </g>
   </g>
 </svg>
